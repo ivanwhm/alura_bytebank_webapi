@@ -7,4 +7,5 @@ final HttpClientWithInterceptor client = HttpClientWithInterceptor.build(
   interceptors: [
     LoggingInterceptor(),
   ],
+  requestTimeout: Duration(seconds: 5),
 );

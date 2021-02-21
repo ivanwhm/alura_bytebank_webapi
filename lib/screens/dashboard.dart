@@ -59,7 +59,11 @@ class Dashboard extends StatelessWidget {
   }
 
   void _showContactUs(BuildContext context) {
-    print('"Contact Us" was tapped.');
+    showAboutDialog(
+      context: context,
+      applicationName: 'Bytebank',
+      applicationVersion: 'Version: 1.0',
+    );
   }
 }
 

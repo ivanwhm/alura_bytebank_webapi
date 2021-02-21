@@ -17,10 +17,13 @@ class Progress extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CircularProgressIndicator(),
-          SizedBox(
-            height: 24.0,
+          Padding(
+            padding: const EdgeInsets.only(top: 24.0),
+            child: Text(
+              label,
+              style: TextStyle(fontSize: 16.0),
+            ),
           ),
-          Text(label),
         ],
       ),
     );

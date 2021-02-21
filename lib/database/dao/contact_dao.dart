@@ -23,7 +23,7 @@ class ContactDao {
     Database db = await getDatabase();
     List<Map<String, dynamic>> result = await db.query(_tableName);
 
-    return result.map((contact) => _toList(contact)).toList();
+    return result.map<Contact>((contact) => _toList(contact)).toList();
   }
 
   Map<String, dynamic> _toMap(Contact contact) {
